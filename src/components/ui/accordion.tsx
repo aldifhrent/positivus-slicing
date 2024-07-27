@@ -2,8 +2,9 @@
 
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
+
 import { cn } from "@/lib/utils";
-import { MinusCircleIcon, PlusCircleIcon } from "lucide-react";
+import { Minus, Plus } from "lucide-react";
 
 const Accordion = AccordionPrimitive.Root;
 
@@ -42,11 +43,7 @@ const AccordionTrigger = React.forwardRef<
         onClick={() => setOpen(!open)}
       >
         {children}
-        {open ? (
-          <MinusCircleIcon className="animate" />
-        ) : (
-          <PlusCircleIcon className="animate" />
-        )}
+        {open ? <Minus /> : <Plus />}
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );

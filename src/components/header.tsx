@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center p-4 border-2">
+    <header className="relative flex justify-between items-center p-4">
       {/* Logo */}
       <Image src="/logo.svg" alt="Logo" width={150} height={150} />
 
@@ -40,7 +40,7 @@ const Header = () => {
 
       {/* Menu overlay untuk mobile */}
       {menuOpen && (
-        <div className="fixed inset-0  bg-opacity-90 flex flex-col items-center justify-center lg:hidden">
+        <div className="absolute top-64 inset-0 flex flex-col items-center justify-center bg-red-500 lg:hidden">
           <MenuItems />
           <Button
             variant="outline"

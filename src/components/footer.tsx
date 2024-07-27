@@ -58,7 +58,7 @@ const Footer = () => {
               placeholder="Email"
               className="w-4/12 bg-transparent border border-gray-300 rounded px-4 py-2 outline-none focus:ring-2 mt-4 "
             />
-            <Button className="bg-limegreen text-black">
+            <Button className="bg-limegreen text-black mt-4">
               Subscribe to news
             </Button>
           </div>
